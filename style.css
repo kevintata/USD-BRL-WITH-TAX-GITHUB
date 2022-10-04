@@ -39,6 +39,9 @@ h1{
     background: #2a2b2a;
     color: #fff; margin: 10px;
 }
+#button:hover{
+    cursor: pointer;
+}
 @media screen and (max-width:550px){
     #container{
         width: 350px;
