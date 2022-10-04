@@ -39,6 +39,8 @@ h1{
     background: #2a2b2a;
     color: #fff; margin: 10px;
 }
-@media screen and (max-width:500px){
-    
+@media screen and (max-width:550px){
+    #container{
+        width: 350px;
+    }
 }
