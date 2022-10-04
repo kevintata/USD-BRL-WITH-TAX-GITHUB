@@ -19,15 +19,15 @@ h1{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background: #fff;
+    margin: auto;    
+    text-align: center;
     width:400px;
-    height: 240px;
+    height: 240px;    
+    background: #fff;
     border-radius:10px;
     box-shadow:0 0 20px 1px #021024;
-    margin: auto;
     font-size: 21px;
     font-weight: 600;
-    text-align: center;
     font-family: 'Alata', sans-serif;
     color: #031631;
 }
@@ -41,7 +41,7 @@ h1{
 }
 @media screen and (max-width:550px){
     #container{
-        width: 300px;
+        width: 350px;
         font-size: 20px;
     }
 }
