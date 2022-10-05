@@ -50,7 +50,7 @@ h1{
 
 @media screen and (max-width:550px){
     #container{
-        width: 350px;
+        width: 330px;
         font-size: 20px;
     }
 }
