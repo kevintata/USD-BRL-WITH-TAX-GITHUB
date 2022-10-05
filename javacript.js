@@ -64,20 +64,19 @@ function add(){
         window.alert(`Please enter a dollar amount`)
     } else {
         pretax.innerHTML = `Pre-Tax = R$${n*real.toFixed(2)}`
-        result.innerHTML = `${n}&dollar; + 8% tax is = BRL R$${res1.toFixed(2)}`
+        result.innerHTML = `${n}&dollar; + 8% tax = BRL R$${res1.toFixed(2)}`
     }
     if(shipping.value.length == 0){
         result2.innerHTML = `Domestic shipping not informed.`
     } else {
-        result2.innerHTML = `Domestic shipping is $${n3}, in BRL that comes out to ${n3*tax*real.toFixed(2)}`
+        result2.innerHTML = `Domestic shipping is $${n3},<br> In BRL that comes out to R$${res3.toFixed(2)}`
     }
     if (weight.value.length == 0){
         result3.innerHTML = `Weight not informed.`
     } else {
-        result3.innerHTML =  `Weight is ${n2}lbs.<br> Shipping will come out to $${res2.toFixed(2)}.
-                                <br> INTL Shipping R$${res2real.toFixed(2)}`
+        result3.innerHTML =  `Weight is ${n2}lbs.<br> Domestic shipping is $${res2.toFixed(2)}. <br> INTL Shipping R$${res2real.toFixed(2)}`
     }
-    if (dollar.value.length >= 0 && weight.value.length > 0){
+    if (dollar.value.length >= 0){
         result4.innerHTML = `Grand total R$${finale.toFixed(2)}`
     }
 }
