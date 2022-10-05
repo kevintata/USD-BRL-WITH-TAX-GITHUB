@@ -54,9 +54,15 @@ h1{
         font-size: 28px;
     }
     #container-dollar{
-        padding: 15px;
-        width: 324px;
+        padding: 5px;
+        width: 335px;
         height: 400px;
-        font-size: 18px;
+        font-size: 17px;
+    }
+    p{
+        margin-bottom: ;
+    }
+    #result4{
+        margin-bottom: 20px;
     }
 }
