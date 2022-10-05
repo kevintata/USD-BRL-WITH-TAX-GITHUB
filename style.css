@@ -25,7 +25,7 @@ h1{
     margin: auto;    
     text-align: center;
     width:400px;
-    height: 440px;    
+    height: 500px;    
     padding: 10px;
     background: #fff;
     border-radius:10px;
@@ -57,7 +57,7 @@ h1{
     #container-dollar{
         padding: 5px;
         width: 335px;
-        height: 400px;
+        height: 450px;
         font-size: 17px;
     }
     
