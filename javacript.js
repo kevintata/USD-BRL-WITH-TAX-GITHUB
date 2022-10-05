@@ -74,7 +74,7 @@ function add(){
     if (weight.value.length == 0){
         result3.innerHTML = `Weight not informed.`
     } else {
-        result3.innerHTML =  `Weight is ${n2}lbs.<br> Domestic shipping is $${res2.toFixed(2)}. <br> INTL Shipping R$${res2real.toFixed(2)}`
+        result3.innerHTML =  `Weight is ${n2}lbs.<br> INTL Shipping is $${res2.toFixed(2)}. <br> INTL Shipping R$${res2real.toFixed(2)}`
     }
     if (dollar.value.length >= 0){
         result4.innerHTML = `Grand total R$${finale.toFixed(2)}`

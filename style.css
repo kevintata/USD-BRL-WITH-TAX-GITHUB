@@ -26,6 +26,7 @@ h1{
     text-align: center;
     width:400px;
     height: 440px;    
+    padding: 10px;
     background: #fff;
     border-radius:10px;
     box-shadow:0 0 20px 1px #021024;
@@ -49,8 +50,12 @@ h1{
 }
 
 @media screen and (max-width:550px){
-    #container{
-        width: 330px;
-        font-size: 20px;
+    h1{
+        font-size: 28px;
+    }
+    #container-dollar{
+        padding: 15px;
+        width: 332px;
+        font-size: 19px;
     }
 }
