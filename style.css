@@ -17,7 +17,7 @@ h1{
     font-style: italic;
 }
 
-#container{
+#container-dollar{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -25,7 +25,7 @@ h1{
     margin: auto;    
     text-align: center;
     width:400px;
-    height: 240px;    
+    height: 440px;    
     background: #fff;
     border-radius:10px;
     box-shadow:0 0 20px 1px #021024;

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="javacript.js"></script>
 
-    <title>USD + Tax to R$BRL calculator</title>
+    <title>USD + Tax to BRL calculator</title>
 
 </head>
 <body>
@@ -15,10 +15,12 @@
         <header>
             <h1> &dollar;USD + Tax to R$BRL calculator</h1>
         </header>
-        <div id="container">
+        <div id="container-dollar">
             <div>
                 <p>
-                    Dollar amount: <input type="number" name="number" id="dollar">
+                    Dollar amount: <input type="number" name="number" id="dollar">$ <br>
+                    Shipping price: <input type="number" name="shipping" id="shipping">$ <br>
+                    Product weight: <input type="number" name="weight" id="weight">lbs
                 </p>
 
                     <div>
@@ -26,10 +28,29 @@
                     </div>
                 
             </div>
-            <div id="result">
-                <p>Your result will go here</p>
-            </div>
+
+                <div id="pretax">
+                    <p></p>
+                </div>
+
+                <div id="result">
+                    <p>Your result will go here</p>
+                </div>
+                
+                <div id="result2">
+                    <p></p>
+                </div>
+
+                <div id="result3">
+                    <p></p>
+                </div>
+
+                <div id="result4">
+                    <p></p>
+                </div>
+                
         </div>
+
     </main>
 </body>
 </html>
