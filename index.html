@@ -11,30 +11,32 @@
 
 </head>
 <body>
-    <main>
+
         <header>
-            <h1> &dollar;USD + Tax to R$BRL calculator</h1>
+            <h1>Kevin's Conversion Tool</h1>
+            <!-- <hr> -->
         </header>
+
+    <main>
+
         <div id="container-dollar">
-            <div>
-                <p>
-                    Dollar amount: <input type="number" name="number" id="dollar">$ <br>
-                    Shipping price: <input type="number" name="shipping" id="shipping">$ <br>
-                    Product weight: <input type="number" name="weight" id="weight">lbs
-                </p>
+
+            <div id="inputs">
+                    <input type="number" name="number" id="dollar" placeholder="$ Dollar Amount">
+                    <input type="number" name="shipping" id="shipping" placeholder="$ Shipping Price">
+                    <input type="number" name="weight" id="weight" placeholder="Product Weight in lbs">
+            </div>
 
                     <div>
-                        <input id="button" type="button" value="Convert" onclick="add()">
+                       <button id="button" onclick="getDollar()">Convert</button>
                     </div>
-                
-            </div>
 
                 <div id="pretax">
                     <p></p>
                 </div>
 
                 <div id="result">
-                    <p>Your result will go here</p>
+                    <p></p>
                 </div>
                 
                 <div id="result2">
@@ -46,11 +48,18 @@
                 </div>
 
                 <div id="result4">
-                    <p>Dollar being counted at R$5.50</p>
+                    <p></p>
                 </div>
-                
+
         </div>
 
+        
+
     </main>
+    
+    <footer id="brltoday">
+            <p></p>
+    </footer>
+
 </body>
 </html>
