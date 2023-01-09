@@ -60,7 +60,7 @@ const getDollar = async () =>{
         container.style.height = ''
         // today.style.display = 'none'
         pretax.innerHTML = `&dollar;${n} TO BRL = R$${real.toFixed(2)}`
-        result.innerHTML = `R&dollar;${real.toFixed(2)} + 8% tax = BRL R$${res1.toFixed(2)}`
+        result.innerHTML = `R&dollar;${real.toFixed(2)} + 7% tax = BRL R$${res1.toFixed(2)}`
     }
 
     if (todayBrl.toFixed(2) >= highBrl.toFixed(2)){
