@@ -109,19 +109,6 @@ input[type=number]{
     box-shadow:0 0 3px 1px rgba(0, 0, 0, 0.521);
 }
 
-.rotate{
-    animation: rotate 1s;
-}
-
-@keyframes rotate {
-    0%{
-        transform: rotate(0deg);
-    }
-    100%{
-        transform: rotate(360deg);
-    }
-}
-
 footer{
     color: #424245;
     font-size: 20px;
