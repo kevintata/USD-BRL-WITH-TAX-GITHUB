@@ -2,6 +2,8 @@ const getDollar = async () =>{
     const res = await fetch("https://economia.awesomeapi.com.br/json/last/USD-BRL")
     const data = await res.json()
     var convert = data.USDBRL.ask
+    var high = data.USDBRL.high
+    var low = data.USDBRL.low
 
 
     var container =document.getElementById('container-dollar')
@@ -25,10 +27,16 @@ const getDollar = async () =>{
     let res3 = n3*convert
     let kg = n2*0.45
     let finale = n*tax*convert+(n2*ppp*convert)+(n3*convert)
-    let today = document.getElementById('brltoday')
+    let today = document.getElementById('dollar-now')
+    let todayhigh = document.getElementById('dollar-high')
+    let todaylow = document.getElementById('dollar-low')
     let todayBrl = Number(convert)
+    let highBrl = Number(high)
+    let lowBrl = Number(low)
 
     today.innerHTML = `Dollar = R$${todayBrl.toFixed(2)}`
+    todayhigh.innerHTML = `High = R$${highBrl.toFixed(2)}`
+    todaylow.innerHTML = `Low = R$${lowBrl.toFixed(2)}`
 
     if(shipping.value.length == 0){
         result2.innerHTML = ``
@@ -55,5 +63,13 @@ const getDollar = async () =>{
         result.innerHTML = `R&dollar;${real.toFixed(2)} + 8% tax = BRL R$${res1.toFixed(2)}`
     }
 
+    if (todayBrl.toFixed(2) >= highBrl.toFixed(2)){
+        today.style.color = 'red'
+    }
+
+    if (lowBrl.toFixed(2) >= todayBrl.toFixed(2)){
+        today.style.color = 'rgb(30, 195, 55)'
+    }
+
 }
-getDollar()
+setInterval(getDollar, 100);

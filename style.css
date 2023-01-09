@@ -123,13 +123,28 @@ input[type=number]{
 }
 
 footer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
     color: #424245;
     font-size: 20px;
     background: #FBFBFB;
     height: 75px;
+}
+
+#highlow{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size:smaller;
+}
+
+#dollar-high{
+    color: rgb(255, 79, 68);
+}
+
+#dollar-low{
+    margin: 0;
+    color: rgb(30, 195, 55);
 }
 
 @media screen and (max-width:590px){
