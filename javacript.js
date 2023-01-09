@@ -17,7 +17,7 @@ const getDollar = async () =>{
     var shipping = document.querySelector('input#shipping')
     let n = Number(dollar.value)
     const real = convert*n
-    const tax = 1.06    
+    const tax = 1.07
     let res1 = n*tax*convert     
     let n2 = Number(weight.value)
     const ppp = 30
