@@ -53,6 +53,7 @@ const getDollar = async () =>{
     }
 
     if (dollar.value.length == 0){
+        pretax.innerHTML = ''
         result.innerHTML = 'Please enter a Dollar amount.'
         result2.innerHTML = 'Your result will go here'
         result4.innerHTML = ' '
@@ -65,11 +66,30 @@ const getDollar = async () =>{
 
     if (todayBrl.toFixed(2) >= highBrl.toFixed(2)){
         today.style.color = 'red'
+    } else if (lowBrl.toFixed(2) >= todayBrl.toFixed(2)){
+        today.style.color = 'rgb(30, 195, 55)'
+    } else {
+        today.style.color = ''
     }
 
-    if (lowBrl.toFixed(2) >= todayBrl.toFixed(2)){
-        today.style.color = 'rgb(30, 195, 55)'
-    }
+    // Copy Button
+
+    if (dollar.value.length == 0){
+        let copyDiv = document.getElementById('copyDiv')
+
+        copyDiv.style.display = 'none'
+    } else{
+    let copyText = document.getElementById('copy') 
+
+    copyDiv.style.display = 'block'
+    copyText.addEventListener('click', () => {
+
+        window.navigator.clipboard.writeText(finale.toFixed(2))
+    
+    });
+}
+    
+
 
 }
 setInterval(getDollar, 100);
