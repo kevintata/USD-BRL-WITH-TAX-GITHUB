@@ -72,6 +72,13 @@ const getDollar = async () =>{
         today.style.color = ''
     }
 
+    if (todayBrl.toFixed(2) >= highBrl.toFixed(2) && lowBrl.toFixed(2) >= todayBrl.toFixed(2)){
+        today.style.color = '#171717'
+        todayhigh.innerHTML = 'Market is closed.'
+        todayhigh.style.color = '#202020'
+        todaylow.style.display = 'none'
+    }
+
     // Copy Button
 
     if (dollar.value.length == 0){
