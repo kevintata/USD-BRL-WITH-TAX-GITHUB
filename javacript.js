@@ -43,11 +43,13 @@ const getDollar = async () =>{
     } else {
         result2.innerHTML = `Domestic shipping is $${n3}, In BRL that comes out to R$${res3.toFixed(2)}`
     }
+
     if (weight.value.length == 0){
-        // result3.innerHTML = `Weight not informed.`
+        result3.innerHTML = ``
     } else {
         result3.innerHTML =  `Weight is ${n2}lbs. ${n2}lbs = ${kg.toFixed(2)}kg. At $30/lb = <br> INTL Shipping is $${res2.toFixed(2)} <br> INTL Shipping R$${res2real.toFixed(2)}`
     }
+
     if (dollar.value.length >= 0){
         result4.innerHTML = `<br> Grand total R$${finale.toFixed(2)}`
     }
@@ -92,7 +94,7 @@ const getDollar = async () =>{
     copyText.addEventListener('click', () => {
 
         window.navigator.clipboard.writeText(finale.toFixed(2))
-    
+
     });
 }
     
