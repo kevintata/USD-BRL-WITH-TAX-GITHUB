@@ -92,9 +92,7 @@ const getDollar = async () =>{
 
     copyDiv.style.display = 'block'
     copyText.addEventListener('click', () => {
-
         window.navigator.clipboard.writeText(finale.toFixed(2))
-
     });
 }
     
