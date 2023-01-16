@@ -46,7 +46,7 @@ const getDollar = async () =>{
     if (weight.value.length == 0){
         result3.innerHTML = ``
     } else {
-        result3.innerHTML =  `Weight is ${kg}Kgs. At $24/kg = <br> INTL Shipping is $${res2.toFixed(2)} <br> INTL Shipping R$${res2real.toFixed(2)}`
+        result3.innerHTML =  `Weight is ${kg}Kgs. At $23.5/kg = <br> INTL Shipping is $${res2.toFixed(2)} <br> INTL Shipping R$${res2real.toFixed(2)}`
     }
 
     if (dollar.value.length >= 0){
