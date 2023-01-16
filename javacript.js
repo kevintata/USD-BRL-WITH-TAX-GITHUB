@@ -19,14 +19,13 @@ const getDollar = async () =>{
     const real = convert*n
     const tax = 1.07
     let res1 = n*tax*convert     
-    let n2 = Number(weight.value)
-    const ppp = 30
-    let res2  = n2*ppp
-    let res2real = n2*ppp*convert
+    let kg = Number(weight.value)
+    const ppp = 24
+    let res2  = kg*ppp
+    let res2real = kg*ppp*convert
     let n3 = Number(shipping.value)
     let res3 = n3*convert
-    let kg = n2*0.45
-    let finale = n*tax*convert+(n2*ppp*convert)+(n3*convert)
+    let finale = n*tax*convert+(kg*ppp*convert)+(n3*convert)
     let today = document.getElementById('dollar-now')
     let todayhigh = document.getElementById('dollar-high')
     let todaylow = document.getElementById('dollar-low')
@@ -47,7 +46,7 @@ const getDollar = async () =>{
     if (weight.value.length == 0){
         result3.innerHTML = ``
     } else {
-        result3.innerHTML =  `Weight is ${n2}lbs. ${n2}lbs = ${kg.toFixed(2)}kg. At $30/lb = <br> INTL Shipping is $${res2.toFixed(2)} <br> INTL Shipping R$${res2real.toFixed(2)}`
+        result3.innerHTML =  `Weight is ${kg}Kgs. At $24/kg = <br> INTL Shipping is $${res2.toFixed(2)} <br> INTL Shipping R$${res2real.toFixed(2)}`
     }
 
     if (dollar.value.length >= 0){
@@ -65,6 +64,8 @@ const getDollar = async () =>{
         pretax.innerHTML = `&dollar;${n} TO BRL = R$${real.toFixed(2)}`
         result.innerHTML = `R&dollar;${real.toFixed(2)} + 7% tax = BRL R$${res1.toFixed(2)}`
     }
+
+    // High and Low fluctuation 
 
     if (todayBrl.toFixed(2) >= highBrl.toFixed(2)){
         today.style.color = 'red'
