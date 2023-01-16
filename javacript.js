@@ -20,7 +20,7 @@ const getDollar = async () =>{
     const tax = 1.07
     let res1 = n*tax*convert     
     let kg = Number(weight.value)
-    const ppp = 24
+    const ppp = 23.5
     let res2  = kg*ppp
     let res2real = kg*ppp*convert
     let n3 = Number(shipping.value)
