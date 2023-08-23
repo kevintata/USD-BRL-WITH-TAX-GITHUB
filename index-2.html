@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+
+
+    <title>USD + Tax to BRL calculator</title>
+
+</head>
+<body>
+
+    <header>
+        <h1>Kevin's Conversion Tool</h1>
+    </header>
+
+    <main>
+
+        <div id="container-dollar">
+
+            <div id="inputs">
+                    <input type="number" name="number" id="dollar" placeholder="$ Dollar Amount">
+                    <input type="number" name="shipping" id="shipping" placeholder="$ Shipping Price">
+                    <input type="number" name="weight" id="weight" placeholder="Product Weight in kg">
+                    <form>
+                        <label>
+                            <input type="radio" name="kiloNumber" value="70" checked>
+                            70
+                        </label>
+                        <br>
+                        <label>
+                            <input type="radio" name="kiloNumber" value="23.5">
+                            23.5
+                        </label>
+                    </form>
+            </div>
+            
+                    <div>
+                    <button id="button">Convert</button>
+                    </div>
+
+                <div id="pretax">
+                    <p></p>
+                </div>
+
+                <div id="result">
+                    <p></p>
+                </div>
+                
+                <div id="result2">
+                    <p></p>
+                </div>
+
+                <div id="result3">
+                    <p></p>
+                </div>
+
+                <div id="result4">
+                    <p></p>
+                </div>
+                
+                <div id="copyDiv">
+                    <button id="copy">Copy to Clipboard</button>
+                </div>
+
+        </div>
+
+        
+
+    </main>
+    
+    <footer>
+
+        <div id="brltoday">
+            <p id="dollar-now"></p>
+        </div>
+
+        <div id="highlow">
+            <p id="dollar-high"></p><p id="dollar-low"></p>
+        </div>
+            
+    </footer>
+
+    <script src="Script-4.js"></script>
+</body>
+</html>

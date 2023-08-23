@@ -62,7 +62,7 @@ h1{
     margin-bottom: 50px
 }
 
-input{
+input[type="number"]{
     height: 30px;
     background: transparent;
     border: none;
@@ -137,7 +137,7 @@ footer{
     color: rgb(30, 195, 55);
 }
 
-@media screen and (max-width:590px){
+@media screen and (max-width: 690px){
     h1{
         font-size: 26px;
     }
