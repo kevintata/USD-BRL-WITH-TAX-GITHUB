@@ -75,6 +75,21 @@ input[type="number"]{
     font-size: 16px;
 }
 
+form{
+    text-align: left;
+    font-size: 16px;
+    color: #a0a0a0;
+}
+
+input[type="radio"]{
+    height: 15px;
+    background: transparent;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    font-family: "apple-font";
+}
+
 input:hover{
     box-shadow:0 0 3px 1px rgba(0, 0, 0, 0.521);
 }
