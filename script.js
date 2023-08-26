@@ -1,7 +1,9 @@
 const tax = 1.07
 let kiloPrice;
 
+const screen = window.matchMedia("(max-width: 690px)")
 const container = document.getElementById('container-dollar')
+const form = document.querySelector('form')
 const dollar = document.getElementById('dollar')
 const result = document.querySelector('div#result')
 const pretax = document.querySelector('div#pretax')
@@ -50,7 +52,25 @@ radio23.addEventListener('click', () =>{
     getDollar();
 })
 
-shipping.value.length == 0 ? result2.innerHTML = `` : result2.innerHTML = `Domestic shipping is $${n3}, In BRL that comes out to R$${res3.toFixed(2)}`
+if (screen) {
+
+    shipping.value.length == 0 ? result2.innerHTML = `` : result2.innerHTML = ``
+
+    // result3.innerHTML = `Weight is ${kg}kgs. At $${kiloPrice}/kg = <br> INTL Shipping is $${res2.toFixed(2)} <br> INTL Shipping R$${res2real.toFixed(2)}`
+    
+    form.innerHTML = `
+    <label>
+        <input type="radio" name="kiloNumber" value="70" checked>
+        70
+    </label>
+    <label>
+        <input type="radio" name="kiloNumber" value="23.5">
+        23.5
+    </label>`
+} else{
+    shipping.value.length == 0 ? result2.innerHTML = `` : result2.innerHTML = `Domestic shipping is $${n3}, In BRL that comes out to R$${res3.toFixed(2)}`
+}
+
 
 weightInput.value.length == 0 ? result3.innerHTML = `` : result3.innerHTML = `Weight is ${kg}kgs. At $${kiloPrice}/kg = <br> INTL Shipping is $${res2.toFixed(2)} <br> INTL Shipping R$${res2real.toFixed(2)}`
 

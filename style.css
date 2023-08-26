@@ -175,4 +175,18 @@ footer{
         height: 25px;
     }
     
+    input[type="radio"]{
+        height: 10px;
+        background: transparent;
+        border: none;
+        border-radius: 5px;
+        margin-bottom: -30px;
+        font-family: "apple-font";
+    }
+    #result3{
+        display: none;
+    }
+    #button{
+        margin-top: -25px;
+    }
 }
