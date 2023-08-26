@@ -68,6 +68,7 @@ function mediaQuery(){
             23.5
         </label>`
     } else if (!screen.matches){
+        shipping.value.length == 0 ? result2.innerHTML = `Your result will go here` : result2.innerHTML = ``
         // shipping.value.length == 0 ? result2.innerHTML = `` : result2.innerHTML = `Domestic shipping is $${n3}, In BRL that comes out to R$${res3.toFixed(2)}`
 
         form.innerHTML = `
