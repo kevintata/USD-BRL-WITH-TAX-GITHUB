@@ -52,24 +52,38 @@ radio23.addEventListener('click', () =>{
     getDollar();
 })
 
-if (screen) {
+function mediaQuery(){
+    if (screen.matches) {
+        shipping.value.length == 0 ? result2.innerHTML = `` : result2.innerHTML = ``
 
-    shipping.value.length == 0 ? result2.innerHTML = `` : result2.innerHTML = ``
+        // result3.innerHTML = `Weight is ${kg}kgs. At $${kiloPrice}/kg = <br> INTL Shipping is $${res2.toFixed(2)} <br> INTL Shipping R$${res2real.toFixed(2)}`
+        
+        form.innerHTML = `
+        <label>
+            <input type="radio" name="kiloNumber" value="70" checked>
+            70
+        </label>
+        <label>
+            <input type="radio" name="kiloNumber" value="23.5">
+            23.5
+        </label>`
+    } else if (!screen.matches){
+        // shipping.value.length == 0 ? result2.innerHTML = `` : result2.innerHTML = `Domestic shipping is $${n3}, In BRL that comes out to R$${res3.toFixed(2)}`
 
-    // result3.innerHTML = `Weight is ${kg}kgs. At $${kiloPrice}/kg = <br> INTL Shipping is $${res2.toFixed(2)} <br> INTL Shipping R$${res2real.toFixed(2)}`
-    
-    form.innerHTML = `
-    <label>
-        <input type="radio" name="kiloNumber" value="70" checked>
-        70
-    </label>
-    <label>
-        <input type="radio" name="kiloNumber" value="23.5">
-        23.5
-    </label>`
-} else{
-    shipping.value.length == 0 ? result2.innerHTML = `` : result2.innerHTML = `Domestic shipping is $${n3}, In BRL that comes out to R$${res3.toFixed(2)}`
+        form.innerHTML = `
+        <label>
+            <input type="radio" name="kiloNumber" value="70" checked>
+            70
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="kiloNumber" value="23.5">
+            23.5
+        </label>`
+    }
 }
+screen.addListener(mediaQuery)
+mediaQuery(screen)
 
 
 weightInput.value.length == 0 ? result3.innerHTML = `` : result3.innerHTML = `Weight is ${kg}kgs. At $${kiloPrice}/kg = <br> INTL Shipping is $${res2.toFixed(2)} <br> INTL Shipping R$${res2real.toFixed(2)}`
