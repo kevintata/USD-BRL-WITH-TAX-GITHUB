@@ -75,16 +75,13 @@ if (dollar.value.length >= 0){
 
 // High and Low fluctuation 
 
-    todayBrl.toFixed(2) >= highBrl.toFixed(2) 
-    ? 
-    today.style.color = 'red' 
-    : (
-    lowBrl.toFixed(2) >= todayBrl.toFixed(2) 
-    ? 
-    today.style.color = 'red' 
-    : 
-    today.style.color = ''
-    );
+    if (todayBrl.toFixed(2) >= highBrl.toFixed(2)){
+        today.style.color = 'red'
+    } else if (lowBrl.toFixed(2) >= todayBrl.toFixed(2)){
+        today.style.color = 'rgb(30, 195, 55)'
+    } else {
+        today.style.color = ''
+    }
 
 
 if (todayBrl.toFixed(2) >= highBrl.toFixed(2) && lowBrl.toFixed(2) >= todayBrl.toFixed(2)){
