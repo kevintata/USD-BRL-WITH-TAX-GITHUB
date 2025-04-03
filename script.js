@@ -12,7 +12,7 @@ const result2 = document.querySelector('div#result2')
 const result3 = document.querySelector('div#result3')
 const result4 = document.querySelector('div#result4')
 const shipping = document.querySelector('input#shipping')
-const radio70 = document.querySelector('input[value="70"]');
+const radio90 = document.querySelector('input[value="90"]');
 const radio23 = document.querySelector('input[value="23.5"]');
 const today = document.getElementById('dollar-now')
 const todayhigh = document.getElementById('dollar-high')
@@ -44,9 +44,9 @@ todayhigh.innerHTML = `High = R$${highBrl.toFixed(2)}`
 todaylow.innerHTML = `Low = R$${lowBrl.toFixed(2)}`
 
 
-radio70.checked == true ? kiloPrice = 70 : kiloPrice = 23.5;
+radio90.checked == true ? kiloPrice = 90 : kiloPrice = 23.5;
 
-radio70.addEventListener('click', () =>{
+radio90.addEventListener('click', () =>{
     getDollar();
 })
 radio23.addEventListener('click', () =>{
@@ -124,8 +124,8 @@ function enterPress(event) {
         
 //         form.innerHTML = `
 //         <label>
-//             <input type="radio" name="kiloNumber" value="70" checked>
-//             70
+//             <input type="radio" name="kiloNumber" value="90" checked>
+//             90
 //         </label>
 //         <label>
 //             <input type="radio" name="kiloNumber" value="23.5">
@@ -137,8 +137,8 @@ function enterPress(event) {
 
 //         form.innerHTML = `
 //         <label>
-//             <input type="radio" name="kiloNumber" value="70" checked>
-//             70
+//             <input type="radio" name="kiloNumber" value="90" checked>
+//             90
 //         </label>
 //         <br>
 //         <label>
